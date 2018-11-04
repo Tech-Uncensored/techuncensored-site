@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: techuncensored/techuncensored-site
+  repo: Tech-Uncensored/techuncensored-site
 
 media_folder: static/assets
 public_folder: assets
