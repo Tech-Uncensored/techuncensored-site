@@ -1,0 +1,302 @@
+@media (min-width: $phone-width) {
+    // Header
+     a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    header {
+        background: linear-gradient(to bottom, #0c1117 0%, #0c1117 89%, #18191c 90%, #18191c 100%);
+
+        #bgvid {
+            display: none;
+        }
+
+        h1 {
+            color: #FFF;
+            top: 6%;
+            left: 20%;
+            position: absolute;
+            font: {
+                family: 'Roboto';
+                weight: bold;
+                size: 1.4rem;
+            }
+            line-height: 40px;
+        }
+
+        .header {
+            padding: .5rem .8rem;
+            #logo {
+                display: block;
+                width: 3.5rem;
+                height: 3.5rem;
+                border: none;
+                outline: none;
+
+                &:before {
+                    background: url("https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/tech_uncensored_logo_bg.png") bottom/cover;
+                    content: " ";
+                    display: inline-block;
+                    height: 3.5rem;
+                    position: relative;
+                    vertical-align: text-bottom;
+                    width: 3.5rem;
+                    margin: 35% -10%;
+
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            nav {
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -75%;
+                width: 75%;
+                min-height: 100%;
+                background: #FFF;
+                z-index: 100;
+                transition: left 500ms;
+
+                /*flex-direction: column;*/
+                overflow: auto;
+
+                &.active {
+                    left: 0;
+                }
+
+                .item {
+                    border-bottom: 2px solid #DDD;
+                    color: #222;
+                    display: block;
+                    padding: 10px 0;
+                    font: {
+                        size: 1.5rem;
+                        family: 'Roboto';
+                        weight: lighter;
+                    }
+                    text-indent: 30px;
+
+                    .parent {
+                        margin: auto;
+                    }
+                    .children {
+
+                        .nav-section-title {
+                            padding: 20px 0;
+                            background: #F0EFED;
+                            font-size: 1.2rem;
+                        }
+
+                        .nav-section-list {
+                            margin: 0;
+                            padding: 0;
+
+                            &.hide {
+                                display: none;
+                            }
+
+                            li {
+                                padding: 20px 0;
+                                text-decoration: none;
+                                list-style-type: none;
+                                font-size: 1.0rem;
+                            }
+                        }
+                        #showcase {
+                            display: none;
+                        }
+                    }
+                }
+
+
+            } // nav
+            .mobile-menu {
+                color: whitesmoke;
+                cursor: pointer;
+                width: 0.5rem;
+                height: 0.5rem;
+                background: whitesmoke;
+                box-shadow: -(1rem+.25rem) 0,
+                -(1rem+.25rem) (1rem+.25rem),
+                1rem+.25rem 0,
+                (1rem+.25rem) (-(1rem+.25rem)),
+                0 0 -(1rem+.25rem),
+                -(1rem+.25rem) 0 -(1rem+.25rem),
+                0 (1rem+.25rem),
+                (1rem+.25rem) (1rem+.25rem);
+                transform: none;
+                transition: .5s;
+                border-radius: .25rem/2; // text-align: center;
+                // font: {
+                //     family: 'Roboto';
+                //     size: 1.2rem;
+                // }
+                padding: .5rem; // border:1px solid #FFF;
+                // width: 25%;
+                margin: -1rem 0 3.5rem 87%;
+            }
+
+        } // .header
+        #banner-cta {
+            background: url('https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/icon.jpg') center center /cover no-repeat;
+
+            color: #C0B283;
+            font-family: 'Roboto Slab', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 10px;
+
+            .title {
+                font: {
+                    size: 3.0rem;
+                }
+            }
+
+            .desc {
+                font: {
+                    size: 1.0rem;
+                }
+            }
+
+            .title,
+            .desc,
+                {
+                position: relative;
+                z-index: 1;
+                padding: 10px;
+
+            }
+            .btn {
+                position: relative;
+                z-index: 1;
+                padding: 10px;
+                background: coral;
+                cursor: pointer;
+                margin: 0 5px;
+
+                a {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+
+            }
+        } // #banner-cta
+} // header
+    
+    
+    
+    .about-title {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    .about-p {
+        font-family:1.3rem;
+        margin: 1rem;
+        .pop {
+            font-weight: bold;
+        }
+    }
+    .image-paul {
+        min-width: 350px;
+        min-height: 350px;
+        margin-top: 10px;
+       // background: url('../../public/images/paulshot.png') center center /contain no-repeat;
+    }
+
+    .whitespace {
+        margin: 10rem;
+    }
+
+    .image-nick {
+        min-width: 350px;
+        min-height: 350px;
+        margin-top: 10px;
+        //background: url('../../public/images/nickshot.png') center center / contain no-repeat;
+    }
+    // FOOTER
+     footer {
+
+        .wespeak {
+            text-align: center;
+            font: {
+                size: 3.0rem;
+            }
+            padding:20px 0;
+
+            .label {
+
+                span {
+                    display: block;
+                }
+            }
+
+        }
+
+        #social-wrapper {
+
+            background: #2c2f33;
+
+            .social {
+                padding: 20px 0 0 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+
+                div {
+                    border-radius: 100%;
+                    border-style: none;
+                    display: inline-block;
+                    width: 3.0rem;
+                    height: 3.0rem;
+                    margin: 0 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+
+                    &.facebook {
+                        background-image: url('https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/fb.png');
+                    }
+                    &.twitter {
+                        background-image: url('https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/tw.png');
+                    }
+                    &.youtube {
+                        background-image: url('https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/yt.png');
+                    }
+                    &.github {
+                        background-image: url('https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/gh.png');
+                    }
+                    &.email {
+                        background-image: url('https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/email.png');
+                    }
+                }
+            }
+
+            .desc {
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 20px;
+                font: {
+                    weight: 400;
+                    size: 0.7rem;
+                    family: 'Roboto';
+                }
+                ;
+
+            }
+        }
+
+}
+
+}

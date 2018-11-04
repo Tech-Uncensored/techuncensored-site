@@ -1,0 +1,278 @@
+@media (min-width: $tablet-width) {
+     header {
+        position: relative;
+        overflow: hidden;
+        background: url("https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/banner-mockup.jpg") no-repeat center/cover;
+
+        &.homepage {
+            height: 600px;
+
+        }
+
+        &.subpage {
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            display: none;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99;
+
+            #logo {
+
+                text-transform: uppercase;
+                margin: 1rem;
+                float: left;
+                color: #DCD0C0 !important;
+                font-family: 'Roboto Slab', serif;
+                font-weight: bold;
+                font-size: 3rem;
+                line-height: 3rem;
+
+                &:before {
+                    background: url("https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/tech_uncensored_logo_bg.png") bottom/cover;
+                    content: " ";
+
+                    width: 4rem;
+                    height: 4rem;
+                    position: relative;
+                    vertical-align: text-bottom;
+
+                }
+            } // #logo
+            nav {
+                background: transparent;
+                display: flex;
+                flex-direction: inherit;
+                font-family: 'Roboto Slab', serif;
+                font-weight: bold;
+                font-size: 1.5rem;
+                justify-content: space-around;
+                left: initial;
+                line-height: 5.5rem;
+                margin-left: 0;
+                margin-top: 0;
+                overflow: initial;
+                position: inherit;
+                right: calc(10%);
+                top: calc(50% - 15px);
+                width: auto;
+                z-index: 99;
+
+                .item {
+                    background: transparent;
+                    border: none;
+                    color: #FFF;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-style: italic;
+                    padding: 0 20px;
+                    position: relative;
+                    width: auto;
+                    text-indent: 0;
+
+                    &:nth-of-type(even) {
+                        background: transparent;
+                    }
+
+                    .parent {
+                        span {
+                            display: flex;
+                        }
+
+                        i {
+                            display: none;
+                        }
+                    }
+
+                    a {
+                        color: inherit;
+                        text-decoration: none;
+                    }
+
+                    .children {
+                        background: linear-gradient(to bottom, rgba(12, 17, 23, 0.6) 0%, rgba(12, 17, 23, 0.6) 36%, rgba(24, 25, 28, 0.6) 74%, rgba(24, 25, 28, 0.6) 100%);
+                        padding: 1.3rem;
+                        position: absolute;
+                        top: 3.7rem;
+                        left: -4rem;
+                        width: 800px;
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+                        display: none;
+
+                        .nav-section-title {
+                            background: transparent;
+                            line-height: 1rem;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-weight: bold;
+                            font-size: 1rem;
+                            font-style: normal;
+                            font-family: 'Roboto';
+                        } // .nav-section-title
+                        .nav-section-list {
+                            font-size: .9rem;
+                            list-style: none;
+
+
+
+                            &.hide {
+                                display: block;
+                            }
+
+                            li {
+                                border-bottom: 1px solid lightgrey;
+                                padding: 0;
+                                font: {
+                                    weight: 400;
+                                    family: 'Roboto';
+                                    style: normal;
+                                }
+
+                                &:hover {
+                                    background: white;
+
+                                    a {
+                                        color: navy;
+                                        text-decoration: none;
+                                    }
+                                }
+
+                                a {
+                                    color: #FFF;
+                                    line-height: 30px;
+                                    font-size: 16px;
+                                    padding: 5px;
+                                    display: block;
+                                    top: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    left: 0;
+                                }
+                            }
+                        } // .nav-section-list    
+                    } // .children
+                    &:hover {
+                        border-top: 2px solid lightgrey;
+                        margin-top: -2px;
+                    }
+
+                } // .item
+                .showcase {
+                    &.one {
+                        width: 100%;
+                        height: 4rem;
+                        background: url('https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/iot_raspberrypi_tech_uncensored.jpg') 0% 80%/cover;
+                    }
+                    &.two {
+                        width: 100%;
+                        height: 4rem;
+                        background: url('https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/code_tech_uncensored.jpg') center/cover;
+                    }
+                    &.three {
+                        width: 100%;
+                        height: 4rem;
+                        background: url('https://s3.us-east-2.amazonaws.com/tech-uncensored-assets/wifimodule.jpg') center/cover;
+                    }
+                }
+            } // nav
+            .mobile-menu {
+                display: none;
+            }
+
+        } // .header
+        #banner-cta {
+            background: transparent;
+            font-family: 'Roboto Slab', sans-serif;
+            text-align: left;
+            top: 50%;
+            margin-top: -40px;
+            width: 100%;
+            padding-left: 12%;
+
+            .title {
+                font: {
+                    size: 3.0rem;
+                }
+            }
+
+            .desc {
+                font: {
+                    size: 1.0rem;
+                }
+            }
+
+            .title,
+            .desc,
+                {
+                position: relative;
+                z-index: 1;
+                padding: 10px;
+
+            }
+            .btn-wrap {
+                display: flex;
+                .btn {
+                    position: relative;
+                    z-index: 1;
+                    padding: 10px;
+                    background: coral;
+
+                    &:nth-child(2) {
+                        margin-left: 40px;
+                    }
+                }
+            }
+        } // #banner-cta
+} // header
+
+    //FOOTER
+      #homesplash-footer {
+        position: relative;
+
+        background: #0C1117;
+        margin-top: 50px;
+        .footerContent {
+
+            .navigation {
+                width: 100%;
+                padding: 1rem;
+                ul {
+                    text-decoration: none;
+                    list-style: none;
+                    &.li {
+                        font-size: .9rem;
+                    }
+
+                }
+
+            }
+
+            .greybar {
+                width: 100%;
+                height: 2px;
+                background: #777777;
+                opacity: 0.1;
+            }
+
+            .ctaFooter {
+                text-align: left;
+                padding: 2rem;
+                color: #DBD0C0;
+            }
+        }
+}
+}

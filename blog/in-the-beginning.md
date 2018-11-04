@@ -2,6 +2,7 @@
 path: /in-the-beginning
 date: 2017-04-26T04:00:00.000Z
 title: In The Beginning
+imageURL: 'https://cosmic-s3.imgix.net/4e7a6e10-2af5-11e7-ae54-e9a1fc58ec22-beginning.png'
 ---
 Hello everyone! i would like to get right into producing content that is meant for this site, but i thought a quick post on resources was in order! Now I cannot give you all the perfect places to go out and grab information because you will learn on this journey that it can sometimes add up to preference. This means that, as you determine what language you decide to prefer, and dive deeper into becoming a kick ass engineer, you will follow bloggers, youtuber's, and other people that bend towards your style. That being said, I would like to introduce you to some of my favorite sites that can get you answers. These sites got me through a whole bunch, and i still use/refer to them today. So save them, write them down, and force yourself to visit them regularly! When you feel the urge to check out that latest tweet, or bullshit video that probably won't even put a smile on your face, review these instead. 
 

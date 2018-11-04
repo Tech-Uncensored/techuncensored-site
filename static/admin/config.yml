@@ -1,6 +1,7 @@
 backend:
-  name: github
-  repo: Tech-Uncensored/techuncensored-site
+   name: test-repo
+#  name: github
+#  repo: Tech-Uncensored/techuncensored-site
 
 media_folder: static/assets
 public_folder: assets
@@ -10,9 +11,10 @@ collections:
     label: Blog
     folder: blog
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: imageURL, label: "Image URL" }
+      - { name: imageurl, label: "Image URL" }
       - { name: body, label: Body, widget: markdown }
