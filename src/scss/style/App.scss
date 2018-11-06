@@ -24,6 +24,12 @@ p {
   }
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family:inherit;
+}
+
 img {
   max-width: 100%;
   width: 100%;
@@ -81,6 +87,10 @@ img {
 
 .fs30 {
   font-size: 1.875rem;
+}
+
+.fs50 {
+  font-size: 3.125rem;
 }
 
 .ffr {
