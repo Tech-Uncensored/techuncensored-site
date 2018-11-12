@@ -1,7 +1,7 @@
 backend:
-   name: test-repo
-#  name: github
-#  repo: Tech-Uncensored/techuncensored-site
+# name: test-repo
+  name: github
+  repo: Tech-Uncensored/techuncensored-site
 
 media_folder: static/assets
 public_folder: assets
