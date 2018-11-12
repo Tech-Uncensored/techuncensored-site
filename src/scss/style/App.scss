@@ -76,13 +76,30 @@ img {
 
 .p30 {
   padding: 30px;
-} // font
+} 
+
+// border
+.bt {
+  border-top-width:2px;
+  border-top-color: #646566;
+  border-top-style: solid;
+}
+
+// font
 .fwl {
   font-weight: lighter;
 }
 
 .fwb {
   font-weight: bold;
+}
+
+.fs18 {
+  font-size: 1.125rem;
+}
+
+.fs22 {
+  font-size: 1.375rem;
 }
 
 .fs30 {

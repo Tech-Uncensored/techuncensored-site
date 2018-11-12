@@ -14,6 +14,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: path, label: Path }
+      - { name: featured, label: "Featured", widget: "boolean", default: false }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: imageurl, label: "Image URL" }
