@@ -21,7 +21,7 @@ export default class Index extends React.Component {
              headers: {
             "Content-Type": "application/json; charset=utf-8",
             "Accept": "application/vnd.twitchtv.v5+json",
-            "Client-ID": process.env.CLIENT_ID
+            "Client-ID": process.env.GATSBY_CLIENT_ID
         },
         })
         .then(res => res.json())
